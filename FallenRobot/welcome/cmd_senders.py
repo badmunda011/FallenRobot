@@ -1,8 +1,8 @@
-from FallenRobot import FallenRobot
+from FallenRobot.events import register
 from FallenRobot.welcome.msg_types import Types
 
 
-async def send_cmd(client: shizuchat, msgtype: int):
+async def send_cmd(client: register, msgtype: int):
     GET_FORMAT = {
         Types.TEXT.value: client.send_message,
         Types.DOCUMENT.value: client.send_document,
