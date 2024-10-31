@@ -1,7 +1,7 @@
 from datetime import datetime
 from threading import RLock
 
-from time import TIME_ZONE as TZ
+from FallenRobot.welcome.time import TIME_ZONE as TZ
 from FallenRobot.welcome import MongoDB
 
 INSERTION_LOCK = RLock()
