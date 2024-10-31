@@ -5,14 +5,14 @@ from pymongo.errors import PyMongoError
 
 from FallenRobot import LOGGER
 from FallenRobot import MONGO_DB_URI
-from config import DB_NAME
+from config import SUKH
 
 try:
     shizuchat_db_client = MongoClient(MONGO_DB_URI)
 except PyMongoError as f:
     LOGGER.error(f"Error in Mongodb: {f}")
     exiter(1)
-shizuchat_main_db = shizuchat_db_client[DB_NAME]
+shizuchat_main_db = shizuchat_db_client[SUKH]
 
 
 class MongoDB:
