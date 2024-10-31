@@ -1,5 +1,5 @@
 from os import getenv
-import time
+from time import TIME_ZONE
 from pyrogram import filters
 from dotenv import load_dotenv
 import pytz
