@@ -13,6 +13,6 @@ MONGO_URL = getenv("MONGO_URL", None)
 
 
 #time zone
-TIME_ZONE = pytz.timezone(Config.TIME_ZONE)
+TIME_ZONE = pytz.timezone(time.TIME_ZONE)
 scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
 
