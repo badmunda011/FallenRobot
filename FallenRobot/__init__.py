@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 import time
+from os import getenv
 
 import telegram.ext as tg
 from pyrogram import Client, errors
@@ -35,6 +36,7 @@ ENV = bool(os.environ.get("ENV", False))
 if ENV:
     API_ID = int(os.environ.get("API_ID", None))
     API_HASH = os.environ.get("API_HASH", None)
+    BOT_ID = int(getenv("BOT_ID", "7454086236"))
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
