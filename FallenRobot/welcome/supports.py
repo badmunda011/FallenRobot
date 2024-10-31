@@ -1,4 +1,4 @@
-from config import OWNER_ID, SUDOERS
+from config import OWNER_ID, DEV_USERS
 from FallenRobot.welcome.support_db import SUPPORTS
 
 
@@ -6,7 +6,7 @@ async def load_support_users():
     support = SUPPORTS()
     for i in OWNER_ID:
         support.insert_support_user(int(i),"dev")
-    for i in SUDOERS:
+    for i in DEV_USERS:
         support.insert_support_user(int(i),"sudo")
     return
 
