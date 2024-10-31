@@ -181,5 +181,5 @@ tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
 
 #time zone
-TIME_ZONE = pytz.timezone(FallenRobot.TIME_ZONE)
+TIME_ZONE = pytz.timezone(.TIME_ZONE)
 scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
