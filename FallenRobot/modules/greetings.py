@@ -21,7 +21,9 @@ from FallenRobot.welcome.msg_types import Types, get_wlcm_type
 from FallenRobot.welcome.parser import escape_markdown, mention_html
 from FallenRobot.welcome.string import (build_keyboard, escape_invalid_curly_brackets,
                                  parse_button)
-import  Config
+from FallenRobot import (
+    BOT_ID,
+)
 
 # Initialize
 gdb = GBan()
