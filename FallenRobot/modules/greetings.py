@@ -74,7 +74,7 @@ async def escape_mentions_using_curly_brackets_wl(
 
     return teks
 
-@client.on(events.NewMessage(pattern="^/cleanwelcome ?(.*)"))
+@pbot.on_message(filters.command("cleanwelcome"))
 async def cleanwlcm(_, m: Message):
     db = Greetings(m.chat.id)
     status = db.get_current_cleanwelcome_settings()
@@ -94,7 +94,7 @@ async def cleanwlcm(_, m: Message):
     await m.reply_text(f"Current settings:- {status}")
     return
 
-@client.on(events.NewMessage(pattern="^/cleangoodbye ?(.*)"))
+@pbot.on_message(filters.command("cleangoodbye"))
 async def cleangdbye(_, m: Message):
     db = Greetings(m.chat.id)
     status = db.get_current_cleangoodbye_settings()
@@ -136,7 +136,7 @@ async def cleanservice(_, m: Message):
     return
 
 
-@client.on(events.NewMessage(pattern="^/setwelcome ?(.*)"))
+@pbot.on_message(filters.command("setwelcome"))
 async def save_wlcm(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
@@ -173,7 +173,7 @@ async def save_wlcm(_, m: Message):
     return
 
 
-@client.on(events.NewMessage(pattern="^/setgoodbye ?(.*)"))
+@pbot.on_message(filters.command("setgoodbye"))
 async def save_gdbye(_, m: Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
