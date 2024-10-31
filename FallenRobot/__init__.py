@@ -57,8 +57,8 @@ if ENV:
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
+    TIME_ZONE = os.environ.get("TIME_ZONE", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
-    TIME_ZONE = "Asia/Kolkata"
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
@@ -181,5 +181,5 @@ tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
 
 #time zone
-TIME_ZONE = pytz.timezone(config.TIME_ZONE)
+TIME_ZONE = pytz.timezone(FallenRobot.TIME_ZONE)
 scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
