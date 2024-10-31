@@ -22,6 +22,8 @@ class Config(object):
 
     TIME_API_KEY = "3RV16TWH8JT9"  # Get this value from https://timezonedb.com/api
 
+    TIME_ZONE = "Asia/Kolkata"
+
     OWNER_ID = 7009601543  # User id of your telegram account (Must be integer)
 
     # Optional fields
