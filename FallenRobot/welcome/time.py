@@ -10,5 +10,5 @@ TIME_ZONE= "Asia/Kolkata"
 
 
 #time zone
-TIME_ZONE = pytz.timezone(time.TIME_ZONE)
+TIME_ZONE = pytz.timezone(FallenRobot.weclome.time.TIME_ZONE)
 scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
