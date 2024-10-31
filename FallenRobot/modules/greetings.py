@@ -137,7 +137,7 @@ async def cleanservice(_, Message):
 
 
 @pbot.on_message(filters.command("setwelcome"))
-async def save_wlcm(_, Message):
+async def save_wlcm(_, message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
         return
