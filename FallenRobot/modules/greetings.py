@@ -12,6 +12,7 @@ from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 from FallenRobot import telethn as client
 from FallenRobot import pbot
+from FallenRobot.events import register
 from FallenRobot.welcome.antispam_db import GBan
 from FallenRobot.welcome.greetings_db import Greetings
 from FallenRobot.welcome.supports import get_support_staff
