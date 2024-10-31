@@ -5,7 +5,7 @@ from pymongo.errors import PyMongoError
 
 from FallenRobot import LOGGER
 from FallenRobot import MONGO_DB_URI
-from config import SUKH
+from Config import SUKH
 
 try:
     shizuchat_db_client = MongoClient(MONGO_DB_URI)
