@@ -75,7 +75,7 @@ async def escape_mentions_using_curly_brackets_wl(
     return teks
 
 @pbot.on_message(filters.command("cleanwelcome"))
-async def cleanwlcm(_, m: Message):
+async def cleanwlcm(_, Message):
     db = Greetings(m.chat.id)
     status = db.get_current_cleanwelcome_settings()
     args = m.text.split(" ", 1)
@@ -95,7 +95,7 @@ async def cleanwlcm(_, m: Message):
     return
 
 @pbot.on_message(filters.command("cleangoodbye"))
-async def cleangdbye(_, m: Message):
+async def cleangdbye(_, Message):
     db = Greetings(m.chat.id)
     status = db.get_current_cleangoodbye_settings()
     args = m.text.split(" ", 1)
@@ -116,7 +116,7 @@ async def cleangdbye(_, m: Message):
 
 
 @client.on(events.NewMessage(pattern="^/cleanservice ?(.*)"))
-async def cleanservice(_, m: Message):
+async def cleanservice(_, Message):
     db = Greetings(m.chat.id)
     status = db.get_current_cleanservice_settings()
     args = m.text.split(" ", 1)
@@ -137,7 +137,7 @@ async def cleanservice(_, m: Message):
 
 
 @pbot.on_message(filters.command("setwelcome"))
-async def save_wlcm(_, m: Message):
+async def save_wlcm(_, Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
         return
@@ -174,7 +174,7 @@ async def save_wlcm(_, m: Message):
 
 
 @pbot.on_message(filters.command("setgoodbye"))
-async def save_gdbye(_, m: Message):
+async def save_gdbye(_, Message):
     db = Greetings(m.chat.id)
     if m and not m.from_user:
         return
