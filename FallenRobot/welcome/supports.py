@@ -1,4 +1,7 @@
-from config import OWNER_ID, DEV_USERS
+from FallenRobot import (
+    DEV_USERS,
+    OWNER_ID,
+)
 from FallenRobot.welcome.support_db import SUPPORTS
 
 
