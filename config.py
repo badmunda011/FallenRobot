@@ -5,5 +5,5 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_NAME = "shizuDB"
+SUKH = "shizuDB"
 MONGO_URL = getenv("MONGO_URL", None)
