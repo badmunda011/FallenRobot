@@ -24,6 +24,8 @@ class Config(object):
 
     TIME_ZONE = "Asia/Kolkata"
 
+    DB_NAME = "shizuDB"
+
     OWNER_ID = 7009601543  # User id of your telegram account (Must be integer)
 
     # Optional fields
