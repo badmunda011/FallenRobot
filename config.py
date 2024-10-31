@@ -12,6 +12,6 @@ MONGO_URL = getenv("MONGO_URL", None)
 
 
 #time zone
-BAD = pytz.timezone(config.BAD)
+BAD = pytz.timezone(time.BAD)
 scheduler = AsyncIOScheduler(timezone=BAD)
 
