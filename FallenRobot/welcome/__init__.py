@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 
 from FallenRobot import LOGGER
-from FallenRobot import MONGO_DB_URI, 
+from FallenRobot import MONGO_DB_URI
 from config import DB_NAME
 
 try:
