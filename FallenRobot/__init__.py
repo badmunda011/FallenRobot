@@ -179,7 +179,3 @@ from FallenRobot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
-
-#time zone
-TIME_ZONE = pytz.timezone(TIME_ZONE)
-scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
