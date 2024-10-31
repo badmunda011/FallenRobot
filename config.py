@@ -1,5 +1,5 @@
 from os import getenv
-from time import TIME_ZONE
+from Time import TIME_ZONE
 from pyrogram import filters
 from dotenv import load_dotenv
 import pytz
@@ -13,6 +13,6 @@ MONGO_URL = getenv("MONGO_URL", None)
 
 
 #time zone
-TIME_ZONE = pytz.timezone(time.TIME_ZONE)
+TIME_ZONE = pytz.timezone(Time.TIME_ZONE)
 scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
 
