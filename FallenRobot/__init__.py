@@ -4,6 +4,7 @@ import sys
 import time
 from os import getenv
 
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
@@ -176,3 +177,7 @@ from FallenRobot.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
+
+#time zone
+TIME_ZONE = pytz.timezone(FallenRobot.TIME_ZONE)
+scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
