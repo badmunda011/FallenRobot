@@ -7,3 +7,4 @@ scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
 
 
 TIME_ZONE = "Asia/Kolkata"
+DB_NAME = "shizuDB"
