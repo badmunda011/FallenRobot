@@ -6,9 +6,9 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 load_dotenv()
 
-BAD = "Asia/Kolkata"
+TIME_ZONE= "Asia/Kolkata"
 
 
 #time zone
-BAD = pytz.timezone(time.BAD)
-scheduler = AsyncIOScheduler(timezone=BAD)
+TIME_ZONE = pytz.timezone(time.TIME_ZONE)
+scheduler = AsyncIOScheduler(timezone=TIME_ZONE)
