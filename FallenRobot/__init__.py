@@ -59,7 +59,6 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     TIME_ZONE = os.environ.get("TIME_ZONE", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
-    DB_NAME = "shizuDB"
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
