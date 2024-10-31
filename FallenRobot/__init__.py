@@ -58,6 +58,7 @@ if ENV:
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
+    TIME_ZONE = "Asia/Kolkata"
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
